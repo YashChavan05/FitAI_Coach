@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# FitCoach_AI
 
-## Project info
+FitCoach_AI is a smart AI-powered fitness and nutrition assistant that helps users achieve their health goals through personalized workout plans and diet suggestions. It features food image recognition using Roboflow to provide real-time nutrition insights and tailored recommendations.
 
-**URL**: https://lovable.dev/projects/97b735cf-245c-41ae-9352-4a44ddb963fe
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- 🎯 **AI-Personalized Fitness Coaching**
+  - Suggests exercises based on your fitness goals (e.g., weight loss, muscle gain).
+  
+- 🥗 **Smart Diet Plans Based on Food Image Analysis**
+  - Tailors meal plans depending on the food detected.
 
-**Use Lovable**
+- 📸 **Food Detection via Roboflow API**
+  - Upload a food image to detect ingredients and get nutritional insights.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/97b735cf-245c-41ae-9352-4a44ddb963fe) and start prompting.
+- 📊 **Goal-based Suggestions**
+  - Adjusts recommendations dynamically based on user input and detections.
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🔐 **Expandable for Authentication, Progress Tracking, and Analytics**
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧰 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Component   | Technology                      |
+|------------|----------------------------------|
+| Frontend   | HTML, CSS, JavaScript            |
+| Backend    | Node.js *(assumed implemented)*  |
+| API        | Roboflow Image Detection API     |
+| Deployment | Vercel / Netlify *(optional)*    |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📸 Screenshots
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🔹 Home / Dashboard
+![Home](./screenshots/1.png)
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🔹 Food Upload Interface
+![Food Upload](./screenshots/2.png)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 🔹 Food Detection Output
+![Detection](./screenshots/3.png)
 
-**Edit a file directly in GitHub**
+### 🔹 Diet & Fitness Recommendations
+![Recommendation](./screenshots/4.png)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+> 📂 Make sure to place these screenshots in a `screenshots` folder inside your project directory.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔌 Roboflow Integration
 
-## What technologies are used for this project?
+- Food image is captured or uploaded by the user.
+- The app sends the image to Roboflow’s API for processing.
+- The API returns detected food items with confidence scores.
+- The app uses this to generate real-time meal insights and suggest compatible workouts and calorie goals.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🚧 Future Enhancements
+✅ User login and profile history
 
-## How can I deploy this project?
+✅ Progress tracking (weekly/monthly)
 
-Simply open [Lovable](https://lovable.dev/projects/97b735cf-245c-41ae-9352-4a44ddb963fe) and click on Share -> Publish.
+🔜 Integration with wearables
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🔜 Voice assistant & chatbot support
